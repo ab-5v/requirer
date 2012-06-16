@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+var requirer = require('../');
+
+if (process.argv.length != 4) {
+    console.log('Usage: requirer src.js dest.js');
+} else {
+    requirer.do.apply(null, process.argv.slice(2));
+}

@@ -1,0 +1,32 @@
+{
+    "name": "requirer",
+    "version": "0.0.1",
+    "description": "js client side build tool in nodejs module way",
+    "keywords": [
+        "build",
+        "tool",
+        "deployment"
+    ],
+    "author": {
+        "name": "Artur Burtsev",
+        "email": "artjock@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/artjock/requirer.git"
+    },
+    "main": "./index",
+    "bin": {
+        "requirer": "./bin/requirer"
+    },
+    "engines": {
+        "node": ">= 0.6.x < 0.8.0"
+    },
+    "scripts": {
+        "test": "make test"
+    },
+    "devDependencies": {
+        "mocha": "*",
+        "should": "*"
+    }
+}
