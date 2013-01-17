@@ -1,6 +1,6 @@
 {
     "name": "requirer",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "js client side build tool in nodejs module way",
     "keywords": [
         "build",
@@ -20,13 +20,13 @@
         "requirer": "./bin/requirer"
     },
     "engines": {
-        "node": ">= 0.6.x < 0.8.0"
+        "node": "*"
     },
     "scripts": {
-        "test": "make test"
+        "test": "mocha test/spec"
     },
     "devDependencies": {
         "mocha": "*",
-        "should": "*"
+        "expect.js": "*"
     }
 }
