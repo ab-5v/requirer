@@ -10,6 +10,13 @@ describe('requirer', function() {
         });
     });
 
+    it('should require one file with dots in path', function() {
+        compare('test3.js', function(err, src, res) {
+            expect(src).to.eql(res);
+            done();
+        });
+    });
+
     it('should require files recursively', function(done) {
         compare('test2.js', function(err, src, res) {
             expect(src).to.eql(res);
