@@ -10,7 +10,7 @@ describe('requirer', function() {
         });
     });
 
-    it('should require one file with dots in path', function() {
+    it('should require one file with dots in path', function(done) {
         compare('test3.js', function(err, src, res) {
             expect(src).to.eql(res);
             done();
@@ -19,6 +19,13 @@ describe('requirer', function() {
 
     it('should require files recursively', function(done) {
         compare('test2.js', function(err, src, res) {
+            expect(src).to.eql(res);
+            done();
+        });
+    });
+
+    it('should ignore not existing files', function(done) {
+        compare('test4.js', function(err, src, res) {
             expect(src).to.eql(res);
             done();
         });

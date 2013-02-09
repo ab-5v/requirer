@@ -1,4 +1,4 @@
 test:
-	mocha --require should --reporter spec test/*.js
+	mocha --require should --reporter spec test/spec/*.js
 
 .PHONY: test
